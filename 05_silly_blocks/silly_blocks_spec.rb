@@ -25,7 +25,7 @@ describe "some silly block functions" do
       # The way this method can get that do-end block is through yield.
       #
       # def example
-      #   string = yield # yield is equal to...
+      #   string = yield 
       #   string.upcase
       # end
       #
