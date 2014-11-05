@@ -1,18 +1,13 @@
 class Array
 	def sum
-		sum_a = 0
-		self.each { |n| sum_a += n }
-		sum_a
+		self.inject(0) {|result, value| result + value }
 	end
 
 	def square
-		square_array = []
-		self.each do |n|
-		n**2 
-		square_array << n
-		end
-		square_array
+		self.map{|n| n**2}
 	end
 
-	[1, 2, 3].square
+	def square!
+		self.map!{|n| n**2}
+	end
 end

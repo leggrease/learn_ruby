@@ -1,9 +1,11 @@
 class Temperature
 
-	def initialize(k, v)
-		@k = :k
-		@v = v
+	def initialize(opts)
+		@f = opts[:f]
+		@c = opts[:c]
 	end
 
-	def
+	def self.in_fahrenheit(temp)
+		Temperature.new({:f => temp})
+	end
 end

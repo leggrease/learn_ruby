@@ -1,5 +1,5 @@
 def translate(string)
-	vowels = %w{a e i o u}
+	vowels = %w{a e i o u} 
 	if vowels.include? string[0] 
 		 string + "ay"
 	elsif !(vowels.include?(string[0])) && !(vowels.include?(string[1]))
